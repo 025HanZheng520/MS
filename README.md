@@ -14,26 +14,26 @@ executed on 12,509 carefully selected valid video clips.
   - The specific dependencies required for this method are listed in dependency.txt. To install all dependencies at once, please use the following command:
     pip install -r dependency.txt 
 # Model Training
-  ##-Step 1: Install dependencies as outlined above.
-  ##-Step 2: Ensure that the dataset is processed into a .txt format file for input compatibility.
-  ##-Step 3: The model is stored in the model folder. This method primarily utilizes ResNet18 to create a two-layer pyramid structure, followed by using CRF (Conditional Random Fields) to enhance the model’s interactions. Finally, a top-down approach is used to fuse multi-scale features.
-  ##-Step 4: Train the model using the command line with the following command:
+ - **Step 1:** Install dependencies as outlined above.
+ - **Step 2:** Ensure that the dataset is processed into a .txt format file for input compatibility.
+  - **Step 3:** The model is stored in the model folder. This method primarily utilizes ResNet18 to create a two-layer pyramid structure, followed by using CRF (Conditional Random Fields) to enhance the model’s interactions. Finally, a top-down approach is used to fuse multi-scale features.
+  - **Step 4:** Train the model using the command line with the following command:
     python main.py
     This method follows a training/validation mode and evaluates the model using WAR (Weighted Accuracy Rate) and UAR (Unweighted Accuracy Rate).
-  ##-Step 5: The training logs are saved in the log folder.
-  ##-When using the dataset, please cite it as follows:
+  - **Step 5:** The training logs are saved in the log folder.
+  - **When using the dataset, please cite it as follows:
     	@inproceedings{jiang2020dfew,
       title={Dfew: A large-scale database for recognizing dynamic facial expressions in the wild},
       author={Jiang, Xingxun and Zong, Yuan and Zheng, Wenming and Tang, Chuangao and Xia, Wanchuang and Lu, Cheng and Liu, Jiateng},
       booktitle={Proceedings of the 28th ACM international conference on multimedia},
       pages={2881--2889},
       year={2020}
-    }
-      @inproceedings{wang2022ferv39k,
+    }**
+      - **@inproceedings{wang2022ferv39k,
         title={Ferv39k: A large-scale multi-scene dataset for facial expression recognition in videos},
         author={Wang, Yan and Sun, Yixuan and Huang, Yiwen and Liu, Zhongying and Gao, Shuyong and Zhang, Wei and Ge, Weifeng and Zhang, Wenqiang},
         booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
         pages={20922--20931},
-        year={2022}
+        year={2022}**
       }
 
